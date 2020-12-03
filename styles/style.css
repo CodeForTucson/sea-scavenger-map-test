@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 10vh);
+}
+
+header {
+    grid-column: 1 / 11;
+    grid-row: 1;
+    background-color: gray;
+}
+
+header img {
+    max-height: 100%;
+}
+
+footer {
+    grid-column: 1 / 11;
+    grid-row: 10;
+}
+
+#footer-grid {
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: 10vh;
+}
+
+#cft-logo {
+    max-height: 35%;
+    align-self: center;
+}
+
+.worldmap {
+    grid-column: 1 / 11;
+    grid-row: 2 / 10;
+}
