@@ -13,7 +13,7 @@ async function drawMap() {
     // Calculate Equirectangular projection for country data.
     const projection = d3.geoEquirectangular()
         .fitSize([dimensions.width, dimensions.height], countryShapes)
-        .center([10, 10]);
+        .translate([dimensions.width / 2, dimensions.height / 2]);
 
     // Generate SVG path for projection.
     const pathGenerator = d3.geoPath(projection);
@@ -32,6 +32,7 @@ async function drawMap() {
         .enter()
         .append("path")
         .attr("d", pathGenerator);
+
 }
 
 drawMap();
