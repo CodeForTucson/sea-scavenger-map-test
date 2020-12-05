@@ -22,9 +22,9 @@ async function drawMap() {
     const wrapper = d3.select("#worldmap")
         .append("svg")
         .attr("width", dimensions.width)
-        .attr("height", dimensions.height)
-        .style("stroke", "gray")
-        .style("fill", "lightgray");
+        .attr("height", dimensions.height);
+//        .style("stroke", "gray")
+//        .style("fill", "lightgray");
 
     // Render map.
     const countries = wrapper.selectAll(".country")
